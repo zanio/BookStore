@@ -12,7 +12,7 @@
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
+          {{ msg }}
         </h1>
 
         <p class="subheading font-weight-regular">
@@ -82,10 +82,12 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+import { Vue, Prop, Component } from "vue-property-decorator";
 
 @Component
 export default class HelloWorld extends Vue {
+  @Prop(String) msg: string | undefined;
+
   private ecosystem: Array<object> = [
     {
       text: "vuetify-loader",
@@ -136,6 +138,5 @@ export default class HelloWorld extends Vue {
       href: "https://vuetifyjs.com/getting-started/frequently-asked-questions"
     }
   ];
-
-};
+}
 </script>
