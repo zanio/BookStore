@@ -1,0 +1,35 @@
+// src/sass/variables.scss
+@import "~vuetify/src/styles/styles.sass";
+//@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$body-font-family: "Work Sans", sans-serif !important;
+$heading-font-family: $body-font-family, sans-seriff;
+
+// The variables you want to modify
+$font-size-root: 13px;
+// For updating SASS lists
+$material-light: map-merge(
+                $material-light,
+                (
+                        cards: blue,
+                )
+);
+$btn-border-radius: 99px !important;
+$btn-text-transform: capitalize !important;
+$btn-letter-spacing: 0.05rem !important;
+$switch-thumb-width: 10px !important;
+
+@each $heading, $style in $headings {
+  $headings: map-merge(
+                  $headings,
+                  (
+                          $heading:
+                          map-merge(
+                                          $style,
+                                          (
+                                                  "font-family": $heading-font-family,
+                                          )
+                          ),
+                  )
+  );
+}

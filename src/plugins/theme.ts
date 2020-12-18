@@ -1,0 +1,22 @@
+export default {
+  primary: "#03DAC5",
+  secondary: "#21675d",
+  error: "#FF5252",
+  accent: "#2B1C1C",
+  info: "#2196F3",
+  success: "#00D689",
+  warning: "#FFC107",
+  orange: "#FF7E1D",
+  default: "#323232",
+  default2: "#828282",
+  defaults: "#2B1C1C",
+  dark: "#000000",
+  green: "#07BFAD",
+  "light-blue": "#D7F9F6",
+  "light-color": "#2B1C1C;",
+  "app-background-color": "#F6F6F6",
+  onboard: "#f1f0f0",
+  "deep-red": "#960C0C",
+  lightBrown: "#A47110",
+  "dashboard-card": "#F3EBD1"
+};

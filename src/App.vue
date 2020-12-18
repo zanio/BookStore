@@ -34,18 +34,24 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld />
+      <v-row justify-content-center>
+        <v-col cols="12">
+          <v-btn color="primary">Click Me</v-btn>
+        </v-col>
+      </v-row>
+      <Home />
     </v-main>
   </v-app>
 </template>
 
 <script lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import Home from "@/views/Home.vue";
 import { Vue, Component } from "vue-property-decorator";
 
 @Component({
+  name: "App",
   components: {
-    HelloWorld
+    Home
   }
 })
 export default class App extends Vue {}
