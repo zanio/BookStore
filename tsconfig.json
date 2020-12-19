@@ -12,6 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "allowJs": true,
     "types": [
       "webpack-env",
       "jest",
@@ -36,11 +37,6 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-  ],
-  "typeRoots": [
-    "./node_modules/@types",
-    "./node_modules/vuetify/types",
-    "vue-cli-plugin-vuetify-preset-crane"
   ],
   "exclude": [
     "node_modules"
